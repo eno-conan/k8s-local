@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nextjs-k8s-app-deployment
+  labels:
+    app: nextjs-k8s-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nextjs-k8s-app
+  template:
+    metadata:
+      labels:
+        app: nextjs-k8s-app
+    spec:
+      containers:
+      - name: giraffe-app
+        image: enoconan/nextjs-k8s-app # DOCKER_HUB_USER_ID will be replaced.
+        ports:
+        - containerPort: 3000
+# Ref: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment
