@@ -1,0 +1,1 @@
+https://medium.com/@aedemirsen/kubernetes-and-load-balancing-1-358211fd9faa
