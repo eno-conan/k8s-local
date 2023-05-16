@@ -1,0 +1,2 @@
+https://amateur-engineer-blog.com/kubernetes-blue-green/
+- [One or more containers do not have resource limits - this could starve other processes](https://devpress.csdn.net/k8s/62fd664c7e668234661921e8.html)
